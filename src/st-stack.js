@@ -14,7 +14,7 @@ const { NotImplementedError } = require("../extensions/index.js");
  */
 module.exports = class Stack {
 	constructor(){
-		this.arr = arr;
+		this.arr = [];
 	}
 	
   push(element){
