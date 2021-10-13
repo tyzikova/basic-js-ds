@@ -22,7 +22,13 @@ module.exports = class Stack {
  }
  
   pop(){
-	   return this.arr.pop();
+	  let result;
+	  if (this.arr.length === 0){
+		  result = undefined;
+	  }else{
+		  result = this.arr.pop();
+	  }
+	   return result;
    }
    peek(){
 	return this.arr[this.arr.length - 1];

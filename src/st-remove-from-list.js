@@ -28,8 +28,9 @@ module.exports = function removeKFromList(l, k) {
 	while(list.next){
 		if (list.next.value === k){
 			list.next = list.next.next;
-		}
+		}else{
 		list = list.next;
+		}
 	}
 	return l;
 };
