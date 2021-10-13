@@ -13,18 +13,20 @@ import { NotImplementedError } from '../extensions/index.js';
  *
  */
 export default class Stack {
-  push(/* element */) {
-    throw new NotImplementedError('Not implemented');
-    // remove line with error and write your code here
-  }
-
-  pop() {
-    throw new NotImplementedError('Not implemented');
-    // remove line with error and write your code here
-  }
-
-  peek() {
-    throw new NotImplementedError('Not implemented');
-    // remove line with error and write your code here
+	constructor(){
+		this.arr = arr;
+	}
+	
+  push(element){
+    this.arr.push(element);
+ }
+ 
+  pop(){
+	   return this.arr.pop();
+   }
+   peek(){
+	return this.arr[this.arr.length - 1];
   }
 }
+
+  
